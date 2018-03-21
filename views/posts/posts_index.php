@@ -4,7 +4,7 @@
 
     <div class="span8">
 
-        <h2> <a href="<?=BASE_URL?>posts/view<?$post['post_subject']?>"><?=$post['post_subject']?></a></h2>
+        <h2> <a href="<?=BASE_URL?>posts/view/<?=$post['post_id']?><?$post['post_subject']?>"><?=$post['post_subject']?></a></h2>
          <p><?=$post['post_text']?></p>
 
             <div>
