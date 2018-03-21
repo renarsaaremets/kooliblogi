@@ -1,7 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: renar.saaremets
- * Date: 21.03.2018
- * Time: 12:45
- */
+<h1>Comment</h1>
+<?foreach($comment as $comment):?>
+    <div><?=$comment['comment']?></div>
+<?endforeach?>

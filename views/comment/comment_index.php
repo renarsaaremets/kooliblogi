@@ -1,12 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: renar.saaremets
- * Date: 21.03.2018
- * Time: 12:44
- */
-
-class comment_index
-{
-
-}
+<?foreach ($comment as $comment):?>
+    <div class="list-group">
+        <a href="#" class="list-group-item"><?=$comment['comment']?></a>
+    </div>
+<?endforeach;?>

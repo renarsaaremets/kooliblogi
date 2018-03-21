@@ -10,9 +10,12 @@
             <div>
                  <span class="badge badge-success"><?=$post['post_created']?></span>  <span class="badge badge-success"><?=$post['user_id']?></span>
             </div>
-    </div>
-<?endforeach?>
 
+    </div>
+
+
+
+<?endforeach?>
 
 
 

@@ -54,7 +54,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li <?= $controller == 'welcome' ? 'class="active"' : '' ?>><a href="#">Post</a></li>
-                <li <?= $controller == 'welcome' ? 'class="active"' : '' ?>><a href="Users">Users</a></li>
+                <li <?= $controller == 'welcome' ? 'class="active"' : '' ?>><a href="users">Users</a></li>
                 <li <?= $controller == 'welcome' ? 'class="active"' : '' ?>><a href="tags">Tags</a></li>
                 <li <?= $controller == 'halo' ? 'class="active"' : '' ?>><a href="halo">Halo admin</a></li>
                 <li class="dropdown">

@@ -13,6 +13,7 @@ class posts extends Controller
     {
         $this->posts = get_all("SELECT * FROM post");
         $this->users = get_all("SELECT * FROM users");
+        $this->comments = get_all("SELECT * FROM comment");
     }
 
 
@@ -21,6 +22,7 @@ class posts extends Controller
         $post_id = $this->params[0];
         $this->post = get_first("SELECT * FROM post NATURAL JOIN users WHERE post_id='$post_id'");
         $this->tags = get_all("SELECT * FROM post_tags NATURAL JOIN tag WHERE post_id='$post_id'");
+        $this->comments = get_all("SELECT * FROM post_comments NATURAL JOIN comment WHERE comment_id='$post_id'");
     }
 
 
