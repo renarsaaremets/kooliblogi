@@ -1,13 +1,18 @@
+<h1>Posts</h1>
 
-    (<?foreach($posts as $post):?>
+<?foreach($posts as $post):?>
 
+    <div class="span8">
 
-<div class="span8">
-    <h1>Tere maailm</h1>
-    <p>blablabla</p>
-    <div>
-        <span class="badge badge-success">Posted 2012-08-02 20:47:04</span><div class="pull-right"><span class="label">alice</span> <span class="label">story</span> <span class="label">blog</span> <span class="label">personal</span></div>
+        <h2> <a href="<?=BASE_URL?>posts/view<?$post['post_subject']?>"><?=$post['post_subject']?></a></h2>
+         <p><?=$post['post_text']?></p>
+
+            <div>
+                 <span class="badge badge-success"><?=$post['post_created']?></span>  <span class="badge badge-success"><?=$post['user_id']?></span>
+            </div>
     </div>
-</div>
+<?endforeach?>
 
-<?endforeach?>;
+
+
+

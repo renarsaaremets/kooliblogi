@@ -1,12 +1,18 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: renar.saaremets
- * Date: 19.03.2018
- * Time: 12:28
- */
+<h1>Posts</h1>
+
+<?foreach($posts as $post):?>
+
+    <div class="span8">
+
+        <h2> <a href="<?=BASE_URL?>posts/view<?$post['post_subject']?>"><?=$post['post_subject']?></a></h2>
+        <p><?=$post['post_text']?></p>
+
+        <div>
+            <span class="badge badge-success"><?=$post['post_created']?></span>  <span class="badge badge-success"><?=$post['user_id']?></span>
+        </div>
+    </div>
+<?endforeach?>
 
 
-//  Otsi bootsnippet saidilt sobiv kujunduspõhi selle lehe jaoks
-// Asenda muutuvad kohad.
-// Postitaja nime saad username väljalt, mis on vaates tänu kontrolleri view() actioni SQL-i lisatud “NATURAL JOIN”-osale täiesti kättesaadav $post massiivi liikmena.
+
+
